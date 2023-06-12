@@ -1,0 +1,96 @@
+body{
+    background-image: linear-gradient(to right,rgba(2, 27, 49, 0.8),rgba(23,45,56,1));
+}
+.hero{
+    background: rgba(107, 153, 238,0.3);
+    position: relative;
+    top:50%;
+    left: 38%;
+    width: 500px;
+    height: 100px;
+    filter: hue-rotate(345deg);
+    border-radius: 20px;
+    margin-top: 400px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.container::after{
+    content: ' ';
+    position: relative;
+    top: -50px;
+    left: -450px;
+    background: rgb(160, 19, 242);
+    width: 100px;
+    height: 100px;
+    filter: blur(5px);
+    border-radius: 10px 0px 10px 0px;
+    z-index: -1;
+
+}
+
+.container::before{
+    content: ' ';
+    position: relative;
+    bottom: -50px;
+    right: -450px;
+    background: rgb(20, 200, 220);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: blur(3px);
+    z-index: -1;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color:rgba(223, 205, 205,1);
+
+}
+#min{
+    position: relative;
+    right:33px;
+}
+#hrs::before{
+    content:"HOURS";
+    font-size: 12px;
+    position: relative;
+    top: 25px;
+    left:43px;
+}
+#dot1::before{
+    content: "::";
+    font-size: 50px;
+    position: relative;
+    top: -5px;
+    left:5px;
+}
+#min::before{
+    content: "MINUTES";
+    font-size: 10px;
+    position: relative;
+    top: 25px;
+    left:43px;
+}
+#dot2::before{
+    content: "::";
+    font-size: 50px;
+    position: relative;
+    top: -5px;
+    right: 30px;
+}
+#second{
+    position: relative;
+    right:65px;
+}
+#second::before{
+    content: "SECOND";
+    font-size: 10px;
+    position: relative;
+    top: 25px;
+    left:43px;
+}
